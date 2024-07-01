@@ -101,8 +101,16 @@ nav ul li a:hover{
     color: var(--color__blanco);
 }
 
-.portada__fotos{
+.portada__favoritos{
     background: linear-gradient(to bottom, #593b0255, #f2e7c446), url(https://images.unsplash.com/photo-1509785307050-d4066910ec1e?q=80&w=1456&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) center no-repeat;
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.portada__contacto{
+    background: linear-gradient(to bottom, #593b0255, #f2e7c446), url(https://images.unsplash.com/photo-1558996338-294a904a1815?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) center no-repeat;
     width: 100%;
     height: 150px;
     text-align: center;
@@ -186,6 +194,61 @@ nav ul li a:hover{
     color: var(--color__blanco);
 }
 /* Contenedor tarjetas - fin*/
+
+/* Mapa */
+.mapa{
+    max-width: 720px;
+    margin: 0 auto;
+    margin-top: 120px;
+}
+
+.mapa h1{
+    color: var(--color__primario);
+    font-size: 24px;
+    text-align: left;
+}
+
+.mapa iframe{
+    width: 100%;
+    border: 1px solid var(--color__terciario) !important;
+    margin: 0 auto;
+}
+/* Mapa - fin */
+
+/* Sugerencias */
+.contenedor__sugerencias{
+    max-width: 720px;
+    margin: 0 auto;
+    margin-top: 30px;    
+    color: var(--color__negro);
+}
+
+.contenedor__sugerencias h1{
+    color: var(--color__primario);
+    font-size: 24px;
+    text-align: left;
+}
+
+.contenedor__sugerencias .contacto{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;  
+    margin-bottom: 16px; 
+}
+
+.icono__texto{
+    color: var(--color__primario);
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.icono__texto a:hover{
+    color: var(--color__terciario);
+    transition: 500ms;
+}
+/* Sugerencias - fin */
 
 /* Pie de página */
 .footer{
@@ -358,23 +421,7 @@ footer ul li a:hover{
 }
 /* Tarjeta galería - fin */
 
-/* Mapa */
-.mapa{
-    max-width: 720px;
-    margin: 0 auto;
-}
 
-.mapa h1{
-    color: var(--color__primario);
-    text-align: center;
-}
-
-.mapa iframe{
-    width: 100%;
-    border: 5px solid var(--color__negro) !important;
-    margin: 0 auto;
-}
-/* Mapa - fin */
 
 
 @media (max-width:930px) {
@@ -428,6 +475,14 @@ footer ul li a:hover{
         left: 0;
     }
     /* Menu cabecera - fin */
+
+    /* Mapa */
+    .mapa{
+        max-width: 90%;
+        margin: 0 auto;
+        margin-top: 100px;
+    }
+    /* Mapa - fin */
 }
 
 /*@media (max-width:720px) {
@@ -449,13 +504,4 @@ footer ul li a:hover{
         text-align: left;
     }
 }
-
-@media (max-width:858px) {
-    
-
-    
-
-    
-
-    
-}*/
+*/
