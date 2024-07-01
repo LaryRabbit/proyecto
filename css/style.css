@@ -93,6 +93,7 @@ nav ul li a:hover{
     border-radius: 8px;
     transform: translateY(80px);
 }
+
 .flex__container__fotos p{
     font-family: "Borel", cursive;
     font-size: 24px;
@@ -116,6 +117,15 @@ nav ul li a:hover{
     text-align: center;
     border-radius: 8px;
 }
+
+.portada__talleres{
+    background: linear-gradient(to bottom, #593b0255, #f2e7c446), url(https://images.unsplash.com/photo-1501527904397-0801af7b5d18?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) center no-repeat;
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    border-radius: 8px;
+}
+
 /* Portada fotos - fin */
 
 /* Carrusel Boostrap */
@@ -250,6 +260,38 @@ nav ul li a:hover{
 }
 /* Sugerencias - fin */
 
+/* Lista de talleres */
+.card_container{
+    margin-top: 120px;
+}
+
+.card{
+    margin: 5% auto; /* se recomienda dejar el auto y mejor indicar el maximo*/
+    max-width: 720px;
+    width: 90%;
+}
+
+.card img{
+    max-height: 350px;
+    width: 100%;
+    object-fit: cover;
+    margin: 16px auto;
+}
+
+.boton__talleres{
+    background-color: var(--color__terciario) !important;
+    color: var(--color__primario) !important;
+    font-weight: 700 !important;
+    border-radius: 5px !important;
+    padding: 5px 10px !important;
+    border-color: var(--color__terciario) !important;
+}
+
+.boton__talleres:hover{
+    color: var(--color__blanco) !important;
+}
+/* Lista de talleres - fin */
+
 /* Pie de página */
 .footer{
     background-color: var(--color__primario);
@@ -303,7 +345,7 @@ footer ul li a:hover{
 
 /*******************************************/
 
-.texto__inicio h3 {
+/*.texto__inicio h3 {
     color: var(--color__blanco);
     font-size: 19px;
     position: absolute; 
@@ -312,7 +354,7 @@ footer ul li a:hover{
     transform: translateX(-50%) translateY(-50%);
 }
 
-/* Contenido principal -- escribir CSS en orden de las secciones */
+
 .contenedor{
     justify-content: center;
     align-items: center;
@@ -338,93 +380,13 @@ footer ul li a:hover{
     justify-content: center;
 }
 
-.flex__container{
-    /*background-color: rgb(243, 209, 214);
-    border: solid var(--colorPrimario) 5px;
-    border-radius: 15px;*/
-    color: var(--color__blanco);
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 70%;
-    margin: 20px auto; 
-    justify-content: center;
-}
 
-.box__01{
-    background-color: var(--colorPrimario);
-    background-color: var(--colorPrimario);
-    background: linear-gradient(to bottom, #47290655, #f9ad573a), url(https://media.istockphoto.com/id/1867271848/es/foto/hermoso-pastel-colorido-en-la-celebraci%C3%B3n-del-baby-shower.jpg?s=612x612&w=is&k=20&c=8demadFa1edWjOiN09eCBZqxyjSasxpwFNZXfbqDNFE=) center no-repeat;
-    width: 290px;
-    height: 150px;
-    line-height: 150px;
-    text-align: center;
-    border: solid var(--colorSecundario) 5px;
-    border-radius: 15px;
-    color: var(--neutroBlanco);
-}
 
-.box__02{
-    background-color: var(--colorSecundario);
-    background: linear-gradient(to bottom, #47290655, #f9ad573a), url(https://media.istockphoto.com/id/1676097087/es/foto/pastel-de-tres-leches-pasteler%C3%ADa-latinoamericana-de-tres-leches-con-fresas.jpg?s=612x612&w=is&k=20&c=SJ2TMalk7NLaFANwFyHax8JCC2v7_gba9HluLdH9hMQ=) center no-repeat;
-    background-size: cover;
-    width: 290px;
-    height: 150px;
-    line-height: 150px;
-    text-align: center;
-    border: solid var(--colorSecundario) 5px;
-    border-radius: 15px;
-    color: var(--neutroBlanco);
-}
-
-.box__03{
-    background-color: var(--colorPrimario);
-    background: linear-gradient(to bottom, #47290655, #f9ad573a), url(https://media.istockphoto.com/id/1242922602/es/foto/composici%C3%B3n-con-delicioso-pastel-de-crema-de-bayas-sobre-mesa-de-madera-blanca-postre-sabroso.jpg?s=612x612&w=is&k=20&c=29ucOQGXEiqpmSYruvX-IiqCBaXaJfNqTht5uYs_WyU=) center no-repeat;
-    background-size: cover;
-    width: 290px;
-    height: 150px;
-    line-height: 150px;
-    text-align: center;
-    border: solid var(--colorSecundario) 5px;
-    border-radius: 15px;
-    color: var(--neutroBlanco);
-}
-
-.box__04{
-    background-color: var(--colorSecundario);
-    background-color: var(--colorPrimario);
-    background: linear-gradient(to bottom, #47290655, #f9ad573a), url(https://plus.unsplash.com/premium_photo-1668782095746-49291f3de3b3?q=80&w=979&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) center no-repeat;
-    width: 290px;
-    height: 150px;
-    line-height: 150px;
-    text-align: center;
-    border: solid var(--colorSecundario) 5px;
-    border-radius: 15px;
-    color: var(--neutroBlanco);
-}
+*/
 
 
 
-
-/* Tarjeta galería */
-.card{
-    margin: 5% auto; /* se recomienda dejar el auto y mejor indicar el maximo*/
-    max-width: 720px;
-    width: 90%;
-}
-
-.card img{
-    max-height: 350px;
-    width: 100%;
-    object-fit: cover;
-    margin: 20px auto;
-}
-/* Tarjeta galería - fin */
-
-
-
-
-@media (max-width:930px) {
+@media (max-width:960px) {
 
     /* Menu cabecera */
     .logo{
@@ -433,7 +395,7 @@ footer ul li a:hover{
     /* Menu cabecera - fin */
 }
 
-@media (max-width:810px) {
+@media (max-width:840px) {
     /* Menu cabecera */    
     nav ul li a{
         font-size: 16px;
@@ -483,25 +445,13 @@ footer ul li a:hover{
         margin-top: 100px;
     }
     /* Mapa - fin */
-}
 
-/*@media (max-width:720px) {
-    .contenido__principal img{
-        max-width: 100%;
-    }
-}
-
-@media (max-width:752px) {
-    
-    .footer{
-        text-align: left;
-        padding: 15px;
-    }
-
+    /* Footer */
     .footer .contenido__footer ul li{
         display: block;
-        margin: 20px 0;
+        margin: 20px 16px;
         text-align: left;
     }
+    /* Footer - fin*/
 }
-*/
+
