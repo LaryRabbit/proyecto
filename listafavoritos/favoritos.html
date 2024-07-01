@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <!-- Bootstrap CSS va en el header -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-    <title>Avellana's patisserie</title>
+    <title>Favoritos Avellana</title>
 </head>
 <body>
     <!-- Menú y cabecera -->
@@ -18,131 +18,104 @@
         </label>
         <label class="logo">Avellana's patisserie</label>
         <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="./listafavoritos/favoritos.html">Favoritos</a></li>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="#">Favoritos</a></li>
             <li><a href="./productos/menu.html">Productos</a></li>
             <li><a href="./productos/menu.html">Noticias</a></li>
-            <li><a href="./contacto/soporte.html">Contacto</a></li>            
+            <li><a href="../contacto/soporte.html">Contacto</a></li>            
         </ul>
     </nav>
 
-    <!-- Carrusel -->
-    <div id="carouselExampleCaptions" class="carousel slide">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="https://images.unsplash.com/photo-1599819055803-717bba43890f?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Avellana's patisserie</h5>
-              <p>Por nuestro amor al café, a nuestros partners y a nuestros clientes.</p>
-              <p>¡Estamos felices de verte todos los días!</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="https://images.unsplash.com/photo-1595080623303-c5ae68d73e92?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Nuevo en la familia</h5>
-              <p>¡Prueba nuestro nuevo pastel de zanahoria!</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Cupos disponibles</h5>
-              <p>¿Te interesa poner tu propio negocio de panadería o café?</p>
-              <p>Inscríbete a nuestros cusrsos.</p>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Anterior</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Siguiente</span>
-        </button>
+    <!-- Hero -->
+    <section class="flex__container__fotos">
+      <div class="portada__fotos">
+          <p>Compra los favoritos de Avellana</p>
       </div>
-
-
-    <!--<div class="contenedor">
-        <div class="contenido__principal">
-            <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="máquina de café">
-            <div class="texto__caja">
-                <h3>Título</h3>
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                    Dignissimos officiis sapiente vel quae culpa repellat iure, sequi 
-                    necessitatibus consequatur obcaecati aperiam tempora nemo, 
-                    exercitationem reprehenderit ratione aliquam accusantium! Blanditiis, 
-                    voluptatibus.
-                </p>
-        </div>
-    </div>-->
-
-   <div class="contenedor__tarjetas">
-    <div class="tarjeta">  
-      <img src="https://images.unsplash.com/photo-1533134242443-d4fd215305ad?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-      <div class="contenido__tarjeta">
-        <h1>Título</h1>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-          Laborum facere atque perspiciatis ipsam incidunt impedit quaerat 
-          eaque ea
-        </p>
-        <a href="#" class="boton__tarjeta">Ver más</a>
-      </div>
-    </div>
-    <div class="tarjeta">  
-      <img src="https://images.unsplash.com/photo-1483695028939-5bb13f8648b0?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-      <div class="contenido__tarjeta">
-        <h1>Título</h1>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-          Laborum facere atque perspiciatis ipsam incidunt impedit quaerat 
-          eaque ea
-        </p>
-        <a href="#" class="boton__tarjeta">Ver más</a>
-      </div>
-    </div>
-    <div class="tarjeta">  
-      <img src="https://images.unsplash.com/photo-1503485838016-53579610c389?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-      <div class="contenido__tarjeta">
-        <h1>Título</h1>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-          Laborum facere atque perspiciatis ipsam incidunt impedit quaerat 
-          eaque ea
-        </p>
-        <a href="#" class="boton__tarjeta">Ver más</a>
-      </div>
-    </div>
-   </div> 
-    
-    <section class="flex__container">
-        <div class="box__01">
-            Caja 01
-        </div>
-        <div class="box__02">
-            Caja 02
-        </div>
-        <div class="box__03">
-            Caja 03
-        </div>
-        <div class="box__04">
-            Caja 04
-        </div>
     </section>
 
-    <div class="mapa">
-      <h1>Encuentrános</h1>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.8717191420105!2d-99.16779852611512!3d19.417947841151257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ffb252c9e247%3A0x645a8fc78e6675a6!2sThe%20Secret%20Donut%20Society!5e0!3m2!1ses-419!2smx!4v1719451681274!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
+    <!-- Contenido -->
+    <div class="contenedor__tarjetas">
+      <div class="tarjeta">  
+        <img src="https://images.unsplash.com/photo-1533134242443-d4fd215305ad?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+        <div class="contenido__tarjeta">
+          <h1>Cheesecake de zarzamora</h1>
+          <p>
+            Cremosa tarta de queso hecho a base de ricota, requesón, azúcar y el dulce
+            toque de las zarzamoras. El preferido de los niños.
+          </p>
+          <a href="#" class="boton__tarjeta">Comprar</a>
+        </div>
+      </div>
+      <div class="tarjeta">  
+        <img src="https://images.unsplash.com/photo-1483695028939-5bb13f8648b0?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+        <div class="contenido__tarjeta">
+          <h1>Chocolat au pain</h1>
+          <p>
+            El pain au chocolat (pan de chocolate) o chocolatine (chocolatín)
+            consiste en un rectángulo de masa hojaldrada, 
+            como la del croissant, relleno de delicioso chocolate amargo.
+          </p>
+          <a href="#" class="boton__tarjeta">Comprar</a>
+        </div>
+      </div>
+      <div class="tarjeta">  
+        <img src="https://images.unsplash.com/photo-1503485838016-53579610c389?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+        <div class="contenido__tarjeta">
+          <h1>Tarta de fresas</h1>
+          <p>
+            Hecha con una una cortesa de masa quebrada, rellena de ganache de chocolate 
+            blanco cubierto de fresas. Su deleitante sabor no tiene comparación.
+          </p>
+          <a href="#" class="boton__tarjeta">Comprar</a>
+        </div>
+      </div>
+      <div class="tarjeta">  
+        <img src="https://images.unsplash.com/photo-1505851498219-ee2449c18936?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+        <div class="contenido__tarjeta">
+          <h1>Churros de la abuela</h1>
+          <p>
+            Crujientes por fuera suaves por dentro. Fritura alargada, 
+            hecha con una masa de harina similar a la de los buñuelos, cubierta de 
+            azucar y canela.
+          </p>
+          <a href="#" class="boton__tarjeta">Comprar</a>
+        </div>
+      </div>
+      <div class="tarjeta">  
+        <img src="https://images.unsplash.com/photo-1520224220083-214daa28c5f8?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+        <div class="contenido__tarjeta">
+          <h1>Affogato</h1>
+          <p>
+            Mezcla rica y cremosa, hecho a base de expreso y helado artesanal de pistache.
+          </p>
+          <a href="#" class="boton__tarjeta">Comprar</a>
+        </div>
+      </div>
+      <div class="tarjeta">  
+        <img src="https://images.unsplash.com/photo-1678261739137-85881474209c?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+        <div class="contenido__tarjeta">
+          <h1>Caffè corretto</h1>
+          <p>
+            Refrescante bebida elaborada con un doble expreso del grano de la casa y 
+            un chorrito de brandy.
+          </p>
+          <a href="#" class="boton__tarjeta">Comprar</a>
+        </div>
+      </div>
+      <div class="tarjeta">  
+        <img src="https://images.unsplash.com/photo-1589431775908-12b5d29ef976?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+        <div class="contenido__tarjeta">
+          <h1>Galleta de avena</h1>
+          <p>
+            Deliciosa galleta elaborada a base de harina y avena. Repleta de chunks
+            de chocolate.
+          </p>
+          <a href="#" class="boton__tarjeta">Comprar</a>
+        </div>
+      </div>
+     </div> 
 
+    <!-- Pie de página -->
     <footer>
         <div class="footer">
             <div class="contenido__footer">
@@ -156,13 +129,12 @@
                     <li><a href="#">Acerca de</a></li>
                     <li><a href="#">Términos y condiciones</a></li>
                     <li><a href="#">Facturación</a></li>
-                    <li><a href="#">Contáctanos</a></li>
-                    <li><a href="#">Nuestras sucursales</a></li>
+                    <li><a href="#">Contacto</a></li>
                     <li><a href="#">Preguntas frecuentes</a></li>
                 </ul>
             </div>
-            <div class="contenido__footer">
-                Larissa Jiménez © 2024 Casa Pon Todos los derechos reservados
+            <div class="contenido__footer copyrights">
+                Larissa Jiménez © 2024 Casa Pon, Todos los derechos reservados.
             </div>
         </div>
     </footer>

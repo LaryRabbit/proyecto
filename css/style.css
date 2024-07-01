@@ -5,7 +5,7 @@
     --color__primario: #593B02;
     --color__secundario: #F2E7C4; 
     --color__terciario: #BFB304;
-    --color__blanco: #fbfbfb;
+    --color__blanco: #f1f1f1;
     --color__negro: #121212;
 }
 
@@ -29,7 +29,7 @@ body{
     color: var(--color__secundario);
     font-family: "Borel", cursive;
     font-size: 35px;
-    line-height: 110px;
+    line-height: 100px;
     padding: 0 16px;
 }
 /* Logotipo - fin */
@@ -81,11 +81,45 @@ nav ul li a:hover{
 }
 /* Menu cabecera - fin */
 
+/* Portada fotos */
+.flex__container__fotos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 95%;
+    margin: 0 auto; 
+    justify-content: center;
+    padding: 0px;
+    border-radius: 8px;
+    transform: translateY(80px);
+}
+.flex__container__fotos p{
+    font-family: "Borel", cursive;
+    font-size: 24px;
+    transform: translateY(40px);
+    line-height: 50px;    
+    color: var(--color__blanco);
+}
+
+.portada__fotos{
+    background: linear-gradient(to bottom, #593b0255, #f2e7c446), url(https://images.unsplash.com/photo-1509785307050-d4066910ec1e?q=80&w=1456&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) center no-repeat;
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    border-radius: 8px;
+}
+/* Portada fotos - fin */
+
 /* Carrusel Boostrap */
 .carousel-inner img{
     width: 100%;
     height: 400px;
     object-fit: cover;
+}
+
+.carousel-caption h5{
+    color: var(--color__blanco);
+    font-weight: 800;
 }
 
 .carousel-caption p{
@@ -94,6 +128,117 @@ nav ul li a:hover{
     font-size: 18px;
 }
 /* Carrusel Boostrap - fin */
+
+/* Contenedor tarjetas */
+.contenedor__tarjetas{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 100px;
+    align-items: center;
+}
+
+.tarjeta{
+    width: 325px;
+    background-color: var(--color__primario);
+    border-radius: 20px;
+    box-shadow: 0px 2px 4px rgb(0, 0, 0, 0.5);
+    overflow: hidden;
+    margin: 20px;
+    transition: transform 0.5s ease;
+}
+
+.tarjeta:hover{
+    transform: translateY(-20px);
+}
+
+.tarjeta img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.contenido__tarjeta{
+    padding: 16px;
+}
+
+.contenido__tarjeta h1{
+    font-size: 24px;
+    color: var(--color__blanco);
+}
+
+.contenido__tarjeta p{
+    color: var(--color__blanco);
+}
+
+.boton__tarjeta{
+    display: inline-block;
+    background-color: var(--color__terciario);
+    color: var(--color__primario);
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.boton__tarjeta:hover{
+    color: var(--color__blanco);
+}
+/* Contenedor tarjetas - fin*/
+
+/* Pie de página */
+.footer{
+    background-color: var(--color__primario);
+    padding: 24px 0;
+    text-align: left;
+}
+
+.footer a{
+    color: var(--color__secundario);
+    font-weight: 500;
+    text-decoration: none;
+}
+
+footer .contenido__footer{
+    color: var(--color__secundario);
+    width: 100%;
+    margin: 24px 0px;
+}
+
+footer .contenido__footer ul{
+    width: 100%;
+    padding: 0;
+}
+
+footer .contenido__footer li{
+    display: inline-block;
+    margin: 0 16px;
+}
+
+footer .contenido__footer a i{
+    font-size: 26px;
+    margin: 0 16px;
+}
+
+footer .copyrights{
+    margin: 0 16px;
+}
+
+footer ul li a:hover{
+    color: var(--color__terciario);
+    transition: 500ms;
+}
+/* Pie de página - fin */
+
+
+
+
+
+
+
+
+/*******************************************/
 
 .texto__inicio h3 {
     color: var(--color__blanco);
@@ -195,125 +340,8 @@ nav ul li a:hover{
     color: var(--neutroBlanco);
 }
 
-/* Portada fotos */
-.flex__container__fotos{
-    /*background-color: rgb(243, 209, 214);
-    border: solid var(--colorPrimario) 5px;
-    border-radius: 15px;*/
-    color: var(--color__blanco);
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 90%;
-    margin: 0 auto; 
-    justify-content: center;
-    padding: 0px;
-    border-radius: 20px;
-    transform: translateY(80px);
-}
-
-.portada__fotos{
-    background: linear-gradient(to bottom, #47290655, #f9ad573a), url(https://media.istockphoto.com/id/1867271848/es/foto/hermoso-pastel-colorido-en-la-celebraci%C3%B3n-del-baby-shower.jpg?s=612x612&w=is&k=20&c=8demadFa1edWjOiN09eCBZqxyjSasxpwFNZXfbqDNFE=) center no-repeat;
-    width: 100%;
-    height: 150px;
-    line-height: 150px;
-    text-align: center;
-    border: solid var(--colorSecundario) 5px;
-    border-radius: 15px;
-    color: var(--neutroBlanco);
-}
-/* Portada fotos - fin */
-
-.footer{
-    background-color: var(--color__primario);
-    padding: 30px 0;
-    text-align: center;
-}
-
-.footer a{
-    font-size: 17px;
-    color: var(--color__blanco);
-}
-
-.footer .contenido__footer{
-    width: 100%;
-    margin: 30px 0;
-    text-decoration: none;
-    color: var(--color__blanco);
-}
-
-.footer .contenido__footer ul{
-    width: 100%;
-}
 
 
-.footer .contenido__footer li{
-    display: inline-block;
-    margin: 0 30px;
-}
-
-.footer .contenido__footer a i{
-    font-size: 27px;
-    margin: 0 19px;
-}
-
-/* Contenedor tarjetas */
-.contenedor__tarjetas{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 25px;
-}
-
-.tarjeta{
-    width: 325px;
-    background-color: var(--color__primario);
-    border-radius: 20px;
-    box-shadow: 0px 2px 4px rgb(0, 0, 0, 0.3);
-    overflow: hidden;
-    margin: 20px;
-    transition: transform 0.5s ease;
-}
-
-.tarjeta:hover{
-    transform: translateY(-20px);
-}
-
-.tarjeta img{
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-}
-
-.contenido__tarjeta{
-    padding: 20px;
-}
-
-.contenido__tarjeta h1{
-    font-size: 23px;
-    color: var(--color__blanco);
-}
-
-.contenido__tarjeta p{
-    font-size: 17px;
-    color: var(--color__blanco);
-}
-
-.boton__tarjeta{
-    display: inline-block;
-    background-color: var(--color__terciario);
-    color: var(--color__primario);
-    text-decoration: none;
-    border-radius: 5px;
-    padding: 5px 10px;
-}
-
-.boton__tarjeta:hover{
-    color: var(--color__blanco);
-}
-
-/* Contenedor tarjetas - fin*/
 
 /* Tarjeta galería */
 .card{
@@ -349,31 +377,60 @@ nav ul li a:hover{
 /* Mapa - fin */
 
 
-@media (max-width:950px) {
+@media (max-width:930px) {
 
     /* Menu cabecera */
     .logo{
         font-size: 24px;
-        padding-left: 16px;
     }
     /* Menu cabecera - fin */
 }
 
-@media (max-width:800px) {
-
-    /* Menu cabecera */
-    .logo2{
-        padding-left: 16px;
-    }
-    /* Menu cabecera - fin */
-    
-
+@media (max-width:810px) {
+    /* Menu cabecera */    
     nav ul li a{
         font-size: 16px;
     }
+
+    .checkbtn{
+        display: block;
+    }
+
+    nav ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: var(--color__terciario);
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all 500ms;
+        z-index: 1;
+        padding: 0;
+    }
+
+    nav ul li{
+        display: block;
+        margin: 26px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a{
+        font-size: 24px;
+    }
+
+    nav ul li a:hover{
+        color: var(--color__primario);
+        transition: 500ms;
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+    }
+    /* Menu cabecera - fin */
 }
 
-@media (max-width:720px) {
+/*@media (max-width:720px) {
     .contenido__principal img{
         max-width: 100%;
     }
@@ -394,37 +451,11 @@ nav ul li a:hover{
 }
 
 @media (max-width:858px) {
-    .checkbtn{
-        display: block;
-    }
+    
 
-    nav ul{
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background: var(--color__terciario);
-        top: 80px;
-        left: -100%;
-        text-align: center;
-        transition: all 500ms;
-        z-index: 1;
-    }
+    
 
-    nav ul li{
-        display: block;
-        margin: 50px;
-        line-height: 30px;
-    }
+    
 
-    nav ul li a{
-        font-size: 19px;
-    }
-
-    a:hover{
-        color: var(--color__primario);
-    }
-
-    #check:checked ~ ul{
-        left: 0;
-    }
-}
+    
+}*/
