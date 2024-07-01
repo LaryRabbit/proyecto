@@ -5,7 +5,7 @@
     --color__primario: #593B02;
     --color__secundario: #F2E7C4; 
     --color__terciario: #BFB304;
-    --color__blanco: #f1f1f1;
+    --color__blanco: #ffffff;
     --color__negro: #121212;
 }
 
@@ -126,6 +126,13 @@ nav ul li a:hover{
     border-radius: 8px;
 }
 
+.portada__productos{
+    background: linear-gradient(to bottom, #593b0255, #f2e7c446), url(https://images.unsplash.com/photo-1620830958756-46335282c574?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) center no-repeat;
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    border-radius: 8px;
+}
 /* Portada fotos - fin */
 
 /* Carrusel Boostrap */
@@ -146,6 +153,33 @@ nav ul li a:hover{
     font-size: 18px;
 }
 /* Carrusel Boostrap - fin */
+
+/* Búsqueda de productos */
+.busqueda__productos{
+    margin-left: 16px;
+    transform: translateY(100px);
+    z-index: 1;
+}
+.bg-body-tertiary{
+    background-color: #fff !important;
+}
+.container-fluid{
+    background-color: #fff;
+}
+
+.boton__buscar{
+    color: var(--color__primario) !important;
+    font-weight: 700 !important;
+    border-radius: 5px !important;
+    padding: 5px 10px !important;
+    border-color: var(--color__terciario) !important;
+}
+
+.boton__buscar:hover{
+    border-color: var(--color__primario) !important;
+    background-color: var(--color__blanco) !important;
+}
+/* Búsqueda de productos - fin */
 
 /* Contenedor tarjetas */
 .contenedor__tarjetas{
